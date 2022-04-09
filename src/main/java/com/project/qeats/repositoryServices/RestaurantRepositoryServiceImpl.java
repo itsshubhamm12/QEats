@@ -58,7 +58,7 @@ public class RestaurantRepositoryServiceImpl implements RestaurantRepositoryServ
 	    return false;
 	  }
 
-	public List<Restaurant> findAllRestaurants() {
+	public List<Restaurant> getAllRestaurants() {
 		List<RestaurantEntity> restaurantEntities = restaurantRepository.findAll();
 
 	    List<Restaurant> restaurants = new ArrayList<>();

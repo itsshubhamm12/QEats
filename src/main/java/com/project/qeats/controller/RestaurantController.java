@@ -44,7 +44,7 @@ public class RestaurantController {
 	    GetRestaurantsResponse getRestaurantsResponse;
 	
 	    //CHECKSTYLE:ON
-	    getRestaurantsResponse = restaurantService.findRestaurants();
+	    getRestaurantsResponse = restaurantService.getAllRestaurants();
 	    log.info("Restaurants returned {}", getRestaurantsResponse);
 	
 	    return ResponseEntity.ok().body(getRestaurantsResponse);

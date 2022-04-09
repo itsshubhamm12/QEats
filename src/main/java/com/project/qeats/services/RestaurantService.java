@@ -10,5 +10,5 @@ import com.project.qeats.exchanges.GetRestaurantsResponse;
 @Service
 public interface RestaurantService {
 	  GetRestaurantsResponse findAllRestaurantsCloseBy(GetRestaurantsRequest getRestaurantsRequest, LocalTime currentTime);
-	  GetRestaurantsResponse findRestaurants();
+	  GetRestaurantsResponse getAllRestaurants();
 }

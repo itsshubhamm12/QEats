@@ -68,8 +68,8 @@ public class RestaurantServiceImpl implements RestaurantService{
 	  }
 
 	@Override
-	public GetRestaurantsResponse findRestaurants() {
-		List<Restaurant> restaurants = restaurantRepositoryService.findAllRestaurants();
+	public GetRestaurantsResponse getAllRestaurants() {
+		List<Restaurant> restaurants = restaurantRepositoryService.getAllRestaurants();
 		return new GetRestaurantsResponse(restaurants);
 	}
 	
